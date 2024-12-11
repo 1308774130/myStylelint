@@ -1,14 +1,17 @@
-// 必须遵守的 Prettier 规则
+// 必须遵守的 Prettier 核心规则
 module.exports = {
-  // 语句末尾使用分号
+  // 在语句末尾添加分号
   semi: true,
-  
-  // 多行时尽可能打印尾随逗号
-  trailingComma: 'all',
-  
-  // 使用单引号
-  singleQuote: true,
-  
-  // 统一换行符为 LF
-  endOfLine: 'lf',
-}; 
+
+  // 使用空格而不是tab进行缩进
+  useTabs: false,
+
+  // 缩进空格数
+  tabWidth: 2,
+
+  // 使用 LF 换行符
+  endOfLine: "lf",
+
+  // 每行最大长度
+  printWidth: 100,
+};

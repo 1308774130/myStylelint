@@ -6,19 +6,19 @@
     "typescript",
     "typescriptreact"
   ],
-  
+
   // Prettier 配置
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  
+
   // 保存时自动修复
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
-  
+
   // TypeScript 配置
   "typescript.tsdk": "node_modules/typescript/lib",
-  
+
   // 文件类型关联
   "files.associations": {
     "*.js": "javascript",
@@ -26,4 +26,4 @@
     "*.ts": "typescript",
     "*.tsx": "typescriptreact"
   }
-} 
+}

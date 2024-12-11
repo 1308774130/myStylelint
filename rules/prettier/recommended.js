@@ -1,11 +1,17 @@
-// 建议的 Prettier 规则
+// 建议遵守的 Prettier 规则
 module.exports = {
-  // 一行最多 100 字符
-  printWidth: 100,
-  
-  // 使用 2 个空格缩进
-  tabWidth: 2,
-  
-  // 对象字面量的大括号间使用空格
+  // 使用单引号
+  singleQuote: true,
+
+  // JSX中使用单引号
+  jsxSingleQuote: true,
+
+  // 多行时尽可能打印尾随逗号
+  trailingComma: "all",
+
+  // 对象字面量的括号前后打印空格
   bracketSpacing: true,
-}; 
+
+  // 箭头函数总是包含参数括号
+  arrowParens: "always",
+};
