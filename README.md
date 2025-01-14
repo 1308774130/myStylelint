@@ -1,4 +1,4 @@
-# @trip/lint-config
+# @ctrip/eslint-config-cruise
 
 团队统一的代码规范工具集，包含 ESLint、Prettier 和 Git Commit 规范配置。
 
@@ -25,10 +25,10 @@
 
 ```bash
 # 使用 npm
-npm install --save-dev @trip/lint-config
+npm install --save-dev @ctrip/eslint-config-cruise
 
 # 使用 yarn
-yarn add -D @trip/lint-config
+yarn add -D @ctrip/eslint-config-cruise
 ```
 
 ## 🔧 使用方法
@@ -37,7 +37,7 @@ yarn add -D @trip/lint-config
 
 ```bash
 # 安装依赖
-npm install --save-dev @trip/lint-config
+npm install --save-dev @ctrip/eslint-config-cruise
 
 # 运行自动设置脚本
 npx setup-lint-config
@@ -58,7 +58,7 @@ npx setup-lint-config
 
 ```javascript
 module.exports = {
-  extends: ["@trip/lint-config"],
+  extends: ["@ctrip/eslint-config-cruise "],
   rules: {
     // 自定义规则（可选）
   },
@@ -70,7 +70,7 @@ module.exports = {
 在项目根目录创建 `.prettierrc.js`：
 
 ```javascript
-module.exports = require("@trip/lint-config/prettier");
+module.exports = require("@ctrip/eslint-config-cruise /prettier");
 ```
 
 ### Git Commit 规范
@@ -84,7 +84,7 @@ npm install --save-dev @commitlint/cli husky
 2. 创建 `commitlint.config.js`：
 
 ```javascript
-module.exports = require("@trip/lint-config/commitlint");
+module.exports = require("@ctrip/eslint-config-cruise /commitlint");
 ```
 
 3. 配置 husky：
@@ -133,7 +133,7 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
 主要格式化规则包括：
 
-- 行宽限制：100 字符
+- 行宽限制：80 字符
 - 使用单引号
 - 使用 2 空格缩进
 - 句末使用分号

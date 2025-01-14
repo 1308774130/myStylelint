@@ -21,15 +21,7 @@ module.exports = {
     },
   ],
 
-  "@typescript-eslint/explicit-module-boundary-types": [
-    "warn",
-    {
-      allowArgumentsExplicitlyTypedAsAny: true,
-      allowDirectConstAssertionInArrowFunctions: true,
-      allowHigherOrderFunctions: true,
-      allowTypedFunctionExpressions: true,
-    },
-  ],
+  "@typescript-eslint/explicit-module-boundary-types": "off",
 
   // 警告使用不带 rel="noreferrer" 的 target="_blank"
   "react/jsx-no-target-blank": "warn",

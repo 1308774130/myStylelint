@@ -13,5 +13,8 @@ module.exports = {
   endOfLine: "lf",
 
   // 每行最大长度
-  printWidth: 100,
+  printWidth: 80,
+
+  // 禁止在文件末尾添加空行
+  insertFinalNewline: false,
 };

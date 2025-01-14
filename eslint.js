@@ -59,3 +59,5 @@ module.exports = {
     API: "readonly",
   },
 };
+
+console.log("邮轮自定义ESlint配置加载...");

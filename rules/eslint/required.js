@@ -37,7 +37,7 @@ module.exports = {
   "react/no-string-refs": "warn", // 警告使用字符串 refs
   "@typescript-eslint/no-use-before-define": "error", // 不允许在定义前使用
   "@typescript-eslint/no-empty-function": "error", // 不允许空函数
-
+  "dot-notation": "error",
   "no-useless-escape": "error", // 不允许不必要的转义
   "prefer-const": "error", // 不允许使用 let 声明不会被修改的变量
 };

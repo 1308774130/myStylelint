@@ -1,10 +1,9 @@
 {
-  "name": "@trip/lint-config",
-  "version": "1.0.0",
+  "name": "@ctrip/eslint-config-cruise",
+  "version": "1.0.2",
   "description": "团队统一的 ESLint 和 Prettier 配置",
-  "main": "index.js",
+  "main": "eslint.js",
   "files": [
-    "index.js",
     "eslint.js",
     "prettier.js",
     "commitlint.js",
@@ -12,23 +11,35 @@
     ".vscode",
     "scripts"
   ],
+  "exports": {
+    ".": "./eslint.js",
+    "./prettier": "./prettier.js"
+  },
   "bin": {
-    "setup-lint-config": "./scripts/setup.js"
+    "setup-lint-config": "node ./scripts/setup.js"
   },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "peerDependencies": {
-    "eslint": ">=8.0.0",
-    "prettier": ">=2.0.0",
     "@commitlint/cli": ">=17.0.0",
+    "eslint": ">=8.0.0",
     "husky": ">=8.0.0",
-    "lint-staged": ">=13.0.0"
+    "lint-staged": ">=13.0.0",
+    "prettier": ">=2.0.0"
   },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-react": "^7.33.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "@commitlint/config-conventional": "^17.0.0"
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
-} 
+}
